@@ -1,0 +1,32 @@
+{
+  "name": "pulse-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pulse Business Operating System and Insights Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "nodemon server/index.js",
+    "client:dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "NODE_ENV=production node server/index.js",
+    "seed": "node server/seed.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "bcryptjs": "latest",
+    "better-sqlite3": "latest",
+    "concurrently": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "helmet": "latest",
+    "jsonwebtoken": "latest",
+    "lucide-react": "latest",
+    "multer": "latest",
+    "nodemon": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
